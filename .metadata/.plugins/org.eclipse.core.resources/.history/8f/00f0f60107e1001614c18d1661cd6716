@@ -1,0 +1,52 @@
+package practice;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Elesespecial {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
+		
+	 
+		String family_name;
+		String Given_name;
+		int x = input.nextInt();
+		JOptionPane.showInputDialog("enter the markes");
+		
+
+		
+		if( x >= 90 ) { 
+		      
+			family_name = JOptionPane.showInputDialog("Family Name");
+			Given_name = JOptionPane.showInputDialog("Given Name");
+			JOptionPane.showMessageDialog
+		         (null,"Your grade is A " + "Good, keep it up" + x + family_name + Given_name + JOptionPane.PLAIN_MESSAGE); 
+		      }else if( x >= 80  ) {
+		    	  JOptionPane.showMessageDialog
+			         (null,"Your grade is B " + "Good luck" + x + JOptionPane.PLAIN_MESSAGE); 
+		      }else if( x >= 70 ) {
+		    	  JOptionPane.showMessageDialog
+			         (null,"Your grade is C " + "Not bad" + x + JOptionPane.PLAIN_MESSAGE); 
+		      }else if( x >= 60 ) {
+		    	  JOptionPane.showMessageDialog
+			         (null,"Your grade is D " + "You need to improve" + x + JOptionPane.PLAIN_MESSAGE); 
+		      }else 
+		      {
+		    	  JOptionPane.showMessageDialog
+			         (null,"Your grade is F " + "Never get down" + x + JOptionPane.PLAIN_MESSAGE); 
+		      }
+		      
+	}
+
+	
+		
+	}
+
+// TODO Auto-generated method stub
+
+
+
+

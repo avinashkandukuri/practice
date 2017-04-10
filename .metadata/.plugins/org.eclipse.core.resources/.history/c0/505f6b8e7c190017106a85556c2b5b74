@@ -1,0 +1,99 @@
+package guruproject;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class Day1 {
+	static WebDriver driver;
+	
+
+
+	static WebElement username = driver.findElement(By.xpath("//input[@type='text'][@name='uid']"));
+	
+	
+	@BeforeMethod
+	public void day1() throws InterruptedException {
+		//Setup Firefox driver
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+}
+		@Test
+		public void vaid () throws InterruptedException{
+		driver.get("http://demo.guru99.com/v4/");
+		//fetch the title
+		String title = driver.getTitle();
+		System.out.println("tile of the page" + "  " + title);
+//fetch the url
+		String url = driver.getCurrentUrl();
+		Assert.assertTrue(title.contains("Guru99"));
+		System.out.println("url of the page" + " " + url);
+		//enter the vaild username
+	//	WebElement username = driver.findElement(By.xpath("//input[@type='text'][@name='uid']"));
+		username.sendKeys("mngr72529");
+		WebElement password = driver.findElement(By.xpath("//input[@type='password'][@name='password']"));
+		password.sendKeys("Ubusepa");
+		driver.findElement(By.xpath("//input[@type='submit'][@name='btnLogin']")).click();
+		Thread.sleep(5000);
+		String homepage = driver.getTitle();
+		System.out.println("homepage title" + "  " + homepage);
+		if (homepage.contains("HomePage")){
+			System.out.println("it is on homepage");
+		}
+		else{
+			System.out.println("it is not on the homepage");
+		}
+		// html/body/div[3]/ol/li[2]
+		driver.close();
+	}
+@Test
+  public void invaild() throws InterruptedException{
+	  
+	  
+			driver.get("http://demo.guru99.com/v4/");
+			//fetch the title
+			String title = driver.getTitle();
+			System.out.println("tile of the page" + "  " + title);
+	//fetch the url
+			//WebElement username = driver.findElement(By.xpath("//input[@type='text'][@name='uid']"));
+			username.sendKeys("mngr7252");
+			WebElement password = driver.findElement(By.xpath("//input[@type='password'][@name='password']"));
+			password.sendKeys("Ubusepa");
+			driver.findElement(By.xpath("//input[@type='submit'][@name='btnLogin']")).click();
+			Thread.sleep(5000);
+			String homepage = driver.getTitle();
+			System.out.println("homepage title" + "  " + homepage);
+			 
+         }
+  @Test
+public void invalidusername() throws InterruptedException{
+	driver.get("http://demo.guru99.com/v4/");
+	//fetch the title
+	String title = driver.getTitle();
+	System.out.println("tile of the page" + "  " + title);
+//fetch the url
+	//WebElement username = driver.findElement(By.xpath("//input[@type='text'][@name='uid']"));
+	username.sendKeys("mngr72529");
+	WebElement password = driver.findElement(By.xpath("//input[@type='password'][@name='password']"));
+	password.sendKeys("Ubusep");
+	driver.findElement(By.xpath("//input[@type='submit'][@name='btnLogin']")).click();
+	Thread.sleep(5000);
+	String homepage = driver.getTitle();
+	System.out.println("homepage title" + "  " + homepage);
+	
+
+
+}
+}
+
+
+
+

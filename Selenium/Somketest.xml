@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Somketestscenarios">
+  <test name="Sprint">
+    <classes>
+      <class name="sample.Testcase1"/>
+      <class name="sample.Testcase3"/>
+      <class name="sample.Testcase2"/>
+      <class name="sample.Testcase4"/>
+    </classes>
+  </test> <!-- Sprint -->
+</suite> <!-- Somketestscenarios -->

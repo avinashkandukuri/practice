@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="GitCommitSearchPage">
+		<item value="1" key="HISTORY_SIZE"/>
+		<section name="HISTORY0">
+			<section name="searchSection">
+				<item value="1" key="repositoryCount"/>
+				<item value="C:\Users\avinash\workspace\.git" key="repository0"/>
+				<item value="false" key="regexSearch"/>
+				<item value="true" key="matchAuthor"/>
+				<item value="true" key="matchMessage"/>
+				<item value="true" key="ignoreCase"/>
+				<item value="true" key="matchParents"/>
+				<item value="false" key="allBranches"/>
+				<item value="true" key="matchCommit"/>
+				<item value="true" key="matchTree"/>
+				<item value="" key="textPattern"/>
+				<item value="true" key="matchCommitter"/>
+			</section>
+		</section>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="true" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

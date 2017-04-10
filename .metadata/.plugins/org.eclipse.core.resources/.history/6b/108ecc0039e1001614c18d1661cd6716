@@ -1,0 +1,55 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Loops{
+public static void main(String[]args) {
+	Scanner input = new Scanner(System.in);
+    String secretWord ;
+    String guess, dash = "-", upWord;
+    int numGuesses = 0;
+    int numWord;
+    final String SENTINEL = "!";
+    System.out.println("Player 2, please look away.    Player 1, please enter  the secter word: \n");
+    secretWord = input.next().toUpperCase().trim();
+    numWord = secretWord.length();
+    //System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");   
+    for(int dashNum = 1; dashNum < numWord; dashNum++) {
+        dash += "-" ;
+    }
+    System.out.println("WordGuess game!\n");
+    do {
+        System.out.println("Enter a letter (" + SENTINEL + "to guess entire word): ");
+        guess = input.next().toUpperCase().trim();
+        numGuesses ++;
+      if (secretWord.contains(guess) && guess.length() == 1)    {
+            upWord = dash.substring(0, secretWord.indexOf(guess));
+            upWord += guess;
+            upWord += dash.substring(secretWord.indexOf(guess) + 1, dash.length());
+            dash = upWord.toUpperCase();
+            System.out.println(dash);
+            if (dash.equals(secretWord))    {
+                System.out.println("You won!\n" + "The secret word is " + secretWord);
+                System.out.println("You made " + numGuesses + " guesses."); }
+      } else    if (guess.length() >= 2)    {
+            System.out.println("Please only enter one letter at a time! \n");   }               
+            if (guess.contains(SENTINEL)) {
+            System.out.println("What is your guess? ");
+            guess = input.next().toUpperCase().trim();
+            if (guess.equals(secretWord))   {
+                System.out.println("You won!\n" + "The secret word is " + secretWord);
+                System.out.println("You made " + numGuesses + " guesses.");
+                break;
+            } else {
+                System.out.println("You Lose!");
+                System.out.println("The secret word was " + secretWord);
+                System.out.println("You made " + numGuesses + " guesses.");
+                    break;
+                }
+            }
+        }   while(!guess.contains(SENTINEL));
+        input.close();  
+}
+	
+	
+}

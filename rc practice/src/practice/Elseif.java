@@ -1,0 +1,34 @@
+package practice;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Elseif {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		@SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
+
+		int x = input.nextInt();
+		JOptionPane.showInputDialog("enter the markes");
+
+		if (x >= 90) {
+
+			JOptionPane.showMessageDialog(null,
+					"Your grade is A " + "Good, keep it up" + x + JOptionPane.PLAIN_MESSAGE);
+		} else if (x >= 80) {
+			JOptionPane.showMessageDialog(null, "Your grade is B " + "Good luck" + x + JOptionPane.PLAIN_MESSAGE);
+		} else if (x >= 70) {
+			JOptionPane.showMessageDialog(null, "Your grade is C " + "Not bad" + x + JOptionPane.PLAIN_MESSAGE);
+		} else if (x >= 60) {
+			JOptionPane.showMessageDialog(null,
+					"Your grade is D " + "You need to improve" + x + JOptionPane.PLAIN_MESSAGE);
+		} else {
+			JOptionPane.showMessageDialog(null, "Your grade is F " + "Never get down" + x + JOptionPane.PLAIN_MESSAGE);
+		}
+
+	}
+
+}

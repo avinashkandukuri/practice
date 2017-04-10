@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/selenium-server-standalone-3.0.1 (5).jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/chromedriver_win32.zip"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/cucumber/cucumber-core-1.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/cucumber/cucumber-html-0.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/cucumber/cucumber-java-1.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/cucumber/cucumber-junit-1.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/cucumber/cucumber-jvm-deps-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/cucumber/gherkin-2.12.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/cucumber/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/cucumber/junit-4.12-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/cucumber/selenium-server-standalone-3.0.1 (5).jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/poi-3.15/poi-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/poi-3.15/poi-examples-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/poi-3.15/poi-excelant-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/poi-3.15/poi-ooxml-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/poi-3.15/poi-ooxml-schemas-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/poi-3.15/poi-scratchpad-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/log4/log4j.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/poi-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/poi-examples-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/poi-excelant-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/poi-ooxml-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/poi-ooxml-schemas-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/apache poi/poi-scratchpad-3.15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

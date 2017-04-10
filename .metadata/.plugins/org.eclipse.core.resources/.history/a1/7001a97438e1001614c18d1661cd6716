@@ -1,0 +1,39 @@
+package practice;
+
+public class Loops {
+
+	
+		// TODO Auto-generated method stub
+
+		    private int length;
+		    private String word;
+		    private String result;
+		    private String buffer;{
+		   
+
+		        result = "";
+				String aword = null;
+				word = aword;
+		        length = word.length();
+		        buffer = "";
+
+		    }
+		    public String guess(String aguess) 
+		    {
+		        for(int i = 0; i < length; i++) {
+		            buffer = aguess.substring(i, i+1);
+		            if(word.indexOf(buffer) == i)
+		                result = result + buffer;
+		            else if ((word.indexOf(buffer) != -1))
+		                result = result + "+";
+		            if ((word.indexOf(buffer) == -1)) 
+		                result = result + "*";
+		        }
+		        return result;
+
+		    }
+		}
+		
+			
+
+
